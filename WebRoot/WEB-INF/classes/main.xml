@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+<!-- 主界面 -->
+	<package name="main" namespace="/" extends="bookshop-default">
+		<!-- 首页 -->
+		<action name="index" class="action.main.IndexAction">
+			<result name="success">/main/index.jsp</result>
+		</action>
+		<!-- 列表页 -->
+		<action name="list" class="action.main.ListAction" method="list">
+			<result name="success">/main/list.jsp</result>
+		</action>
+		<!-- 内容页 -->
+		<action name="detail" class="action.main.DetailAction" >
+			<result name="success">/main/detail.jsp</result>
+		</action>
+		<!-- 搜索页 -->
+		<action name="search" class="action.main.SearchAction" >
+			<result name="success">/main/search.jsp</result>
+		</action>
+		<!-- 评论操作 -->
+		<action name="feedback" class="action.main.FeedbackAction" >
+			<!-- 添加评论 -->
+			<result name="ajaxAdd" type="json"></result>
+		</action>
+		<action name="feedbackAjax" class="action.main.FeedbackAjaxAction" >
+			<!-- 添加评论 -->
+			<result name="success">/main/ajaxFeedback.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset */
+	body,div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,form,th,td,table,label,article,aside,dialog,footer,header,section,footer,nav,figure,hgroup,a {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+}
+body {
+	color:#6c6c6c;
+	font:12px/21px "\5B8B\4F53",Arial,sans-serif
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,hgroup {
+	display:block
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal
+}
+ul,li {
+	list-style:none
+}
+img,iframe {
+	border:0
+}
+em,strong {
+	font-style:normal;
+	font-weight:normal
+}
+sup,sub {
+	vertical-align:baseline
+}
+a {
+	color:#010101;
+	text-decoration:none;
+	outline:0
+}
+a:hover {
+	color:#4c7d08;
+	text-decoration:underline
+}
+button,input,select,textarea {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	outline:0;
+	vertical-align:middle
+}
+select,input,img {
+	vertical-align:middle
+}
+button {
+	cursor:pointer
+}
+textarea {
+	resize:none;
+	overflow-y:auto
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+/*wrap*/
+.wrap{width:960px;margin:0 auto;clear:both;}
+.error-info{
+	width: 98%;
+	margin: 40px auto;
+	border:#FDCDBD 1px solid;
+	background:#FFF7F4;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 14px;
+}
+.error-info span{text-align:center;}

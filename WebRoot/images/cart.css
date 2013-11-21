@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(style.css);
+
+a{color:#248AC1}
+
+.cart-title{float:left;width:100%;}
+.cart-title .title{
+	float: left;
+	margin: 10px 20px;;
+	width: 150px;
+	height: 30px;
+	line-height:30px;
+	font-size: 24px;
+	color:#333;
+	font-family: microsoft yahei;
+}
+.step{
+	float:left;
+	width:100%;
+}
+.progress{float:left;height: 27px;background: #2AB4EA;margin:5px 0;width:930px;margin-left:5px;}
+.progress li {width: 310px;height: 27px;line-height: 27px;float: left;position: relative;text-align: center;color: white;}
+.progress li em {display: block;width: 20px;height: 27px;position: absolute;top: 0;right: -1px;z-index: 5;background: url(set-p-bg.gif) no-repeat -19px 0px;}
+
+.progress .doing{font-weight:bold;}
+.progress .next{background:#E8E8E8;color:#999;}
+.progress .next em{background-position:-38px 0px;}
+.progress .step1 em{background-position:0 0px;}
+.cart-table{float:left;border-collapse:collapse;width:98%;height:auto;text-align:center;margin:15px 0;}
+.thead{width:100%;height:33px;line-height:33px;background:#F0F0F0;border:1px solid #ddd;margin-bottom:5px;}
+.tbody td{
+	vertical-align: text-top;
+	padding: 5px 15px 5px 5px;
+	border: #DEDEDE 1px solid;
+	vertical-align:middle
+}
+.cart-table .hoverbg{background:#F8F8F8}
+.id{width:60px;height:85px;}
+.title{width:350px;height:85px;}
+.type{width:60px;height:85px;}
+.price{width:120px;height:85px;color:#FC4C0F;}
+.amount{width:120px;height:85px;}
+.amount input{
+	width: 45px;
+	height: 19px;
+	line-height: 19px;
+	border:#CCC 1px solid;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+}
+.discount{width:60px;height:85px;color:#80A44E}
+.pay{width:60px;height:85px;color:#FC4C0F;font-weight:bold;}
+.manage{width:120px;height:85px;}
+.cart-bottom{float:left;width:100%;margin-top:15px;}
+.cart-bottom span{float:right;}
+.cart-bottom em{font-size:16px;color:#FC4C0F;font-weight:bold;padding: 0 8px;text-shadow: #CCC 0 1px 1px;}
+.cart-submit{float:right;margin-top:10px;}
+.gotoshoping {
+	width: 131px;
+	height: 36px;
+	line-height: 36px;
+	background: url(layout-com-btn.png) no-repeat 0 -108px;
+	display: block;
+	float: left;
+}
+.gotoshoping:hover {
+	background-position: -131px -108px;
+}
+.gotocount {
+	width: 131px;
+	height: 36px;
+	line-height: 36px;
+	background: url(layout-com-btn.png) no-repeat 0 -72px;
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+.gotocount:hover {
+	background-position: -131px -72px;
+}
+.order-box{float:left;width:920px;height:auto;border:2px solid #333;padding:10px;}
+.grey-box{float:left;width:100%;background:#F6F6F6;border-bottom:1px solid #ccc;padding-bottom:10px;margin:20px 0;}
+.grey-title{float:left;width:100%;}
+.grey-title span{float:left;margin-left:5px;margin-top:5px;font-weight:bold;font-size:14px;}
+.grey-list{float:left;margin:8px 0;width:100%;}
+.grey-list ul{float:left;margin-left:30px;width:90%;}
+.grey-list ul li{float:left;height:25px;line-height:25px;width:100%;}
+.grey-list ul li input{margin-right:5px;}
+
+.white-box{float:left;width:100%;border-bottom:1px solid #ccc;padding-bottom:10px;}
+.white-title{float:left;width:100%;}
+.white-title span{float:left;margin-left:5px;margin-top:5px;font-weight:bold;font-size:14px;}
+.white-box .t-head{float:left;border-bottom:1px dashed #ccc;padding-bottom:5px;margin:5px 0;width:100%;}
+.t-head .ship-type{float:left;width:45%;font-weight:bold;text-indent:4em;}
+.t-head .ship-fee{float:left;width:55%;font-weight:bold;text-indent:4em;}
+.t-body{float:left;width:100%}
+.t-body ul{float:left;width:100%}
+.t-body li{float:left;width:100%;margin:10px 0;}
+.t-body li .t-title{float:left;width:40%;padding-left:30px;}
+.t-body li .t-fee{float:left;width:50%;padding-left:30px;}
+.white-box ul li input{margin-right:5px;}
+
+.order-success{width:60%;margin:0 auto;font-size:14px;}
+.sucpic{
+	float:left;
+	width: 50px;
+	height: 85px;
+	margin: 0 auto;
+	background: url(cart-suc.gif) no-repeat 0 24px;
+	padding-left: 30px;
+	font-size: 14px;
+	line-height: 85px;
+}
+.sucinfo{float:left;width:400px;height:85px;line-height:85px;}
+.sucinfo em{padding: 0 5px;font-weight: bold;color: red;}
+.pay-box{float:left;width:100%;border:1px solid #ccc;}
+.alipay{float:left;width:100%;height:280px;border-bottom:1px solid #ccc}
+.paybtn{float:left;width:20%;height:100%;border-right:1px solid #ccc;text-align:center}
+.paybtn img{margin-top:30px;}
+.banks{float:left;width:78%;text-align:center}
+.banks img{margin-top:20px;}
+.fastpay{float:left;width:100%;height:280px;}
+
+
+
+
+
+
+
+

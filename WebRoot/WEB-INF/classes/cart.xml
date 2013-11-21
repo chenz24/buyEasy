@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+	<package name="cart" namespace="/cart" extends="bookshop-default">
+		<action name="cart" class="action.cart.CartAction">
+			<!-- 添加商品 -->
+			<result name="add" type="json"></result>
+			<!-- 购物车删除商品 -->
+			<result name="del" type="json"></result>
+			<!-- 购物车恢复删除的商品 -->
+			<result name="recover" type="json"></result>
+			<!-- 购物车变更商品数量 -->
+			<result name="modify" type="json"></result>
+		</action>
+		<!-- 购物车主界面 -->
+		<action name="shoppingCart" class="action.cart.CartAction" method="list">
+			<result name="success">/cart/cart_list.jsp</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- 确认订单主界面 -->
+		<action name="order" class="action.cart.CartAction" method="order">
+			<result name="success">/cart/order.jsp</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- 订单提交 -->
+		<action name="orderAdd" class="action.cart.CartAction" method="orderAdd">
+			<result name="success">/cart/success.jsp</result>
+		</action>
+	</package>
+		
+</struts>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+<!-- 后台 -->
+	<package name="admin" namespace="/admin" extends="bookshop-default">
+		<!-- 首页 -->
+		<action name="index">
+			<result name="success">/admin/index.jsp</result>
+		</action>
+		<!-- 左侧导航 -->
+		<action name="left">
+			<result name="success">/admin/left.jsp</result>
+		</action>
+		<!-- 网站设置 -->
+		<action name="config" class="action.admin.ConfigSettingAction" method="show">
+			<result name="success">/admin/config.jsp</result>
+		</action>
+		<!-- 网站设置更新 -->
+		<action name="configUpdate" class="action.admin.ConfigSettingAction" method="update">
+			<result name="success">/admin/config.jsp</result>
+		</action>
+		<!-- 栏目添加-->
+		<action name="categoryShow" class="action.admin.CategoryAction" method="show">
+			<result name="success">/admin/category_add.jsp</result>
+		</action>
+		<!-- 栏目insert -->
+		<action name="categoryAdd" class="action.admin.CategoryAction" method="add">
+			<result name="success">/admin/showmsg.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 栏目列表 -->
+		<action name="categoryList" class="action.admin.CategoryAction" method="list">
+			<result name="success">/admin/category_list.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 栏目编辑 -->
+		<action name="categoryEdit" class="action.admin.CategoryAction" method="edit">
+			<result name="success">/admin/category_add.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 栏目编辑入库 -->
+		<action name="categoryModify" class="action.admin.CategoryAction" method="modify">
+			<result name="success">/admin/showmsg.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 栏目删除 -->
+		<action name="categoryDel" class="action.admin.CategoryAction" method="delete">
+			<result name="success">/admin/showmsg.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 添加图书 -->
+		<action name="bookForm" class="action.admin.BookAction" method="form">
+			<result name="success">/admin/book_edit.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 添加图书入库 -->
+		<action name="bookAdd" class="action.admin.BookAction" method="add">
+			<result name="success">/admin/showmsg.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 图书列表 -->
+		<action name="bookList" class="action.admin.BookAction" method="list">
+			<result name="success">/admin/book_list.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 图书编辑-->
+		<action name="bookEdit" class="action.admin.BookAction" method="edit">
+			<result name="success">/admin/book_edit.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 图书编辑入库-->
+		<action name="bookModify" class="action.admin.BookAction" method="modify">
+			<result name="success">/admin/showmsg.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 订单列表-->
+		<action name="orderList" class="action.admin.OrderAction" method="list">
+			<result name="success">/admin/order_list.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 订单编辑-->
+		<action name="orderEdit" class="action.admin.OrderAction" method="edit">
+			<result name="success">/admin/order_edit.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 用户列表-->
+		<action name="userList" class="action.admin.UserAction" method="list">
+			<result name="success">/admin/user_list.jsp</result>
+			<result name="fail">/admin/showmsg.jsp</result>
+		</action>
+		<!-- 更新统计-->
+		<action name="statUpdate" class="action.admin.StatAction">
+			<result name="success">/admin/showmsg.jsp</result>
+		</action>
+	</package>
+</struts>

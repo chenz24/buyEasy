@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(common.css);
+
+a{color:#248AC1}
+
+
+.header{float:left;width:100%;border-bottom:1px solid #ccc;padding-bottom:5px;margin-bottom:10px;margin-top:30px;}
+.logo{float:left;width:260px;height:60px;}
+.logo a{float:left;width:260px;height:61px;background:url(logo.png) no-repeat 0 0;text-indent:-999em;}
+.rindex{float:right;width:100px;height:20px;line-height:20px;margin-top:40px;}
+
+.register-pannel{float:left;border:1px solid #ddd;width:100%;}
+.reg-title{}
+.reg-title .title{float:left;margin:10px;width:150px;height:30px;line-height:30px;font-size:24px;font-weight:;color:#333;font-family:microsoft yahei;}
+.reg-title .fr{float:right;width:150px;height:25px;line-height:25px;margin-top:20px;font-size:14px;}
+.progress{float:left;height: 27px;background: #2AB4EA;margin:5px auto;width:930px;margin-left:18px;}
+.progress li {width: 310px;height: 27px;line-height: 27px;float: left;position: relative;text-align: center;color: white;}
+.progress li em {display: block;width: 20px;height: 27px;position: absolute;top: 0;right: -1px;z-index: 5;background: url(set-p-bg.gif) no-repeat -19px 0px;}
+
+.progress .doing{font-weight:bold;}
+.progress .next{background:#E8E8E8;color:#999;}
+.progress .next em{background-position:-38px 0px;}
+.progress .step1 em{background-position:0 0px;}
+.input-pannel{width: 650px;margin: 0 auto;}
+.input-pannel ul{float:left;margin-top:10px;margin-bottom:10px;}
+.input-pannel li{font-size:14px;clear: both;padding: 12px 0px;font-size: 14px;position: relative;}
+.infotitle{width:700px;margin:0 auto;clear:both;}
+.infotitle span{float:left;width:100%;margin:15px 10px;font-size:14px;font-weight:bold;border-bottom:1px solid #ccc;}
+.success{text-align:center;}
+.success span{font-size:26px;color:#A2CD5A;background:url(mag_bg.png) no-repeat 0px -300px;padding-bottom:15px;}
+.info{float:left;margin-left:30px;width:100%;font-size:14px;}
+.goto-reg {
+	display: block;
+	width: 203px;
+	height: 37px;
+	line-height: 37px;
+	background: url(login.png) no-repeat -351px -136px;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+}
+.info dl{}
+.info dt{float:left;font-weight:bold;font-size:14px;margin-top:10px;width:100%;}
+.info dd{float:left;margin:10px 5px;font-size:14px;}
+.info p{width:100%}
+.lable-t {
+	width: 120px;
+	text-align: right;
+	display: block;
+	float: left;
+	height:26px;
+	line-height:26px;
+}
+.cominput {
+	float:left;
+	background:white url(input.png) no-repeat 0 0;
+	border:#999 1px solid;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 7px;
+}
+.cominput {
+	width: 220px;
+}
+.pop-tip{
+	width: 240px;
+	border:#248AC1 1px solid;
+	padding: 2px 25px;
+	position: absolute;
+	top: 13px;
+	left: 370px!important;
+	left: 250px;
+	background: url(msg_bg.png)#E5F5FF no-repeat 3px -245px;
+	display: none;	
+}
+.error-pop{
+	background: url(msg_bg.png)#FFF2F2 no-repeat 3px 5px;
+	border-color:#FFB3B6;
+	color: #B51B23;
+}
+.infotitle{width:700px;margin:0 auto;clear:both;}
+.infotitle span{float:left;width:100%;margin:15px 10px;font-size:14px;font-weight:bold;border-bottom:1px solid #ccc;}
+.info{float:left;margin-left:30px;}
+.info dl{}
+.info dt{float:left;font-weight:bold;font-size:14px;margin-top:10px;width:100%;}
+.info dd{float:left;margin:10px 5px;font-size:14px;}
+.agreements{float:left;}
+.agreements strong{font-weight:bold;}
+.reg-agreements {
+float:left;
+width: 610px;
+height: 116px;
+overflow-y: scroll;
+border: #CCC 1px solid;
+padding: 10px;
+}
+.cos-submit {
+	display: block;
+	width: 131px;
+	height: 36px;
+	background: url(layout-com-btn.png) no-repeat 0 -216px;
+	margin: 0 auto;
+	border: 0;
+	cursor: pointer;
+	float:left;
+}
+.submit-hover{background-position:-131px -216px;}
+.register-panel .cos-submit:hover {background-position: -131px -216px;}
+
+.login-pannel{float:left;width:100%;margin:10px 0;height: 430px;}
+.login-pannel {
+
+}
+.login-ad{
+	width: 610px;
+	height: 360px;
+	float: left;
+	margin-top:15px;
+	overflow: hidden;
+}
+
+.login-box {
+width: 338px;
+height: 366px;
+float: right;
+background: url(login.png) no-repeat;
+}
+.box-title {
+width: 333px;
+float: left;
+height: 42px;
+margin-left: 1px;
+margin-top: 2px;
+background: url(login.png) no-repeat -347px 0;
+}
+.box-title span{margin-left:10px;height:42px;line-height:42px;font-size:16px;font-weight:bold;color:#248AC1}
+.login-box  li {
+	clear: both;
+	font-size: 14px;
+	height: 45px;
+	line-height: 45px;
+}
+.login-box ul{margin:25px 20px;float:left;}
+.login-box li input{width:180px;}
+.login-box li label{width:60px;text-align:left}
+.login-submit{float:left;width:100%;}
+.login-btn {
+	width: 131px;
+	height: 36px;
+	margin-left:40px;
+	border: 0;
+	background: url(layout-com-btn.png) no-repeat 0px -180px;
+	cursor: pointer;
+	margin-right: 8px;
+	text-indent:-999em;
+}
+.login-btn:hover{
+	background-position: -131px -180px;
+}
+.regnew{float:left;width:100%;text-align:center;margin-top:15px;border-bottom:1px solid #ddd;margin-bottom:5px;}
+.toreg {float:left;width:100%;}
+.toreg a{
+		display: block;
+		clear:both;
+		width: 203px;
+		height: 37px;
+		line-height: 37px;
+		background: url(login.png) no-repeat -351px -136px;
+		text-align: center;
+		font-weight: bold;
+		margin: 0 auto;
+		margin-top:10px;
+		font-size:14px;
+}
+.toreg a:hover{background-position:-351px -173px;}
+
+.address-box{float:left;width:700px;height:auto}
+.address-box input{width:150px;}
+.add-submit{float:left;width:100%;}
+.address-box .addrbtn {
+	width: 106px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 0;
+	color: white;
+	font-weight: bold;
+	background: url(addaddrea_btn.gif) no-repeat 0 0;
+	cursor: pointer;
+}
+
+
+
+
+.simple-footer{border-top:1px solid #ddd;width:100%;margin-top:15px;float:left;}
+.copyright{text-align:center;margin-top:10px;height:25px;line-height:25px;}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="user" namespace="/user" extends="bookshop-default">
+		<!-- 注册页面 -->
+		<action name="reg">
+			<result name="success">/user/reg.jsp</result>
+		</action>
+		<!-- 邮箱验证页面 -->
+		<action name="verify_email">
+			<result name="success">/user/verify_email.jsp</result>
+		</action>
+		<!-- 注册检验 -->
+		<action name="regCheck" class="action.user.RegAction">
+			<result name="verify">/user/verify_email.jsp</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- 生成验证码 -->
+		<action name="checkCode" class="action.user.CheckCodeAction">
+			<result name="success" type="stream">
+				<param name="inputName">image</param>
+			 </result>
+		</action>
+		<!-- 验证码校验 -->
+		<action name="veriCheckCode" class="action.user.AjaxCheckAction" method="veriCheckCode">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 用户名校验 -->
+		<action name="checkUser" class="action.user.AjaxCheckAction" method="checkUser">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 检查邮箱 -->
+		<action name="checkEmail" class="action.user.AjaxCheckAction" method="checkEmail">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 检查注册产生的邮箱验证码 -->
+		<action name="verifyEmailCode" class="action.user.AjaxCheckAction" method="verifyEmailCode">
+			<result name="success" type="json"></result>
+		</action>
+		<!-- 注册成功！ -->
+		<action name="regOk" class="action.user.RegAction" method="regOk">
+			<result name="success">/user/reg_ok.jsp</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- 登陆界面 -->
+		<action name="login">
+			<result name="success">/user/login.jsp</result>
+		</action>
+		<!-- 登陆验证 -->
+		<action name="checkLogin" class="action.user.LoginAction">
+			<result name="success" type="redirect">/index.do</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- 退出登陆 -->
+		<action name="logOut" class="action.user.LoginAction" method="logOut">
+			<result name="success" type="redirect">/index.do</result>
+			<result name="fail">/main/error.jsp</result>
+		</action>
+		<!-- ajax提交地址 -->
+		<action name="address" class="action.user.AddressAction">
+			<result name="ajaxAdd" type="json"></result>
+		</action>
+		<action name="isLogin" class="action.user.LoginAction" method="isLogin">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+</struts>
